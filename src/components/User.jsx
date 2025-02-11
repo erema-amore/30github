@@ -20,24 +20,44 @@ const User = () => {
   };
 
   const handleButtonClick = () => {
-    if (step === 1 && input === user.name) {
+    if (step === 1 ) {
+      if ( input === user.name) {
       setPlaceholder('Enter your age');
       setStep(2);
+      } else {
+        setPlaceholder('Incorrect name!')
+      }
       
-    } else if (step === 2 && parseInt(input) === user.age) {
+    } else if (step === 2 ) {
+      if ( parseInt(input) === user.age) {
       setPlaceholder('Enter your email');
       setStep(3); 
+      } else {
+        setPlaceholder('Incorrect age!')
+      }
       
-    } else if (step === 3 && input === user.email) {
+    } else if (step === 3) {
+       if( input === user.email) {
       setPlaceholder('Enter your password');
       setStep(4);
-    } else if (step === 4 && parseInt(input) === user.password) {
+       } else {
+        setPlaceholder('Incorrect email!')
+       }
+    } else if (step === 4) {
+      if (parseInt(input) === user.password) {
       setPlaceholder('16 * 16 = ?');
       setStep(5);
-    } else if (step === 5 && parseInt(input) === sum) {
+      } else {
+        setPlaceholder('Incorrect password!')
+      }
+    } else if (step === 5) {
+      if (parseInt(input) === sum) {
       alert(`Well done! Your winnings ${sum}K $`);
       setStep(1);
       setPlaceholder('Enter your name');
+      } else {
+        setPlaceholder('Insorrect!')
+      }
     } 
     setInput('');
   };
