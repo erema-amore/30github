@@ -7,8 +7,9 @@ import User from './components/User';
 function App() {
   return (
     <div className="App">
-      <HomePage/>
-      <User/>
+      {/* <HomePage/>
+      <User/> */}
+      <Calc/>
       
     </div>
   );

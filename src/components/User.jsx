@@ -56,7 +56,7 @@ const User = () => {
       setStep(1);
       setPlaceholder('Enter your name');
       } else {
-        setPlaceholder('Insorrect!')
+        setPlaceholder('Insorrect!np')
       }
     } 
     setInput('');
