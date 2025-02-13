@@ -1,30 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const calc = () => {
-  
-  let num1  = +prompt('Enter one number');
-  let symbol = prompt('Enter symbol');
-  let num2 = +prompt('Enter two number');
+const Calc = () => {
+  const [task, setTask] = useState('');
 
-  if (symbol === '/') {
-    alert(num1 / num2);
-  } else if (symbol === '*') {
-    alert(num1 * num2);
-  } else if (symbol === '-') {
-    alert(num1 - num2);
-  } else if (symbol === '+') {
-    alert(num1 + num2);
-  } else {
-    alert('Error');
+  const calculateResult = () => {
+    try {
+     
+      if (/^[0-9+\-*/().\s]+$/.test(task)) {
+        // Используем новую функцию для вычисления выражения
+        const result = new Function(`return ${task}`)();
+        setTask(String(result)); // Обновляем input с результатом
+      } else {
+        setTask('Ошибка'); // Если выражение содержит недопустимые символы
+      }
+    } catch {
+      setTask('Ошибка'); // Ловим любые другие ошибки
+    }
   };
 
   return (
-
-    
     <div>
-      
+      <input 
+        type="text"
+        value={task}
+        onChange={(e) => setTask(e.target.value)}
+        placeholder="Введите выражение (например, 5+5)"
+      />
+      <button onClick={calculateResult}>=</button>
     </div>
   );
 };
 
-export default calc;
+export default Calc;
