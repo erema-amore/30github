@@ -5,6 +5,7 @@ import Calc from './components/calc'
 import User from './components/User';
 import Month from './components/month'
 import Day  from './components/Day';
+import MultiplicationTable from './components/MultiplicationTable';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <User/> */}
       {/* <Calc/> */}
       {/* <Month/> */}
-      <Day/>
+      {/* <Day/> */}
+      <MultiplicationTable/>
 
       
     </div>
