@@ -9,9 +9,9 @@ const Counter = () => {
   
   return (
     <div>
-      <label htmlFor=""></label>
-      <button>+</button>
-      <button>-</button>
+      <label htmlFor="">{count}</label>
+      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={() => setCount(count - 1)}>-</button>
     </div>
   );
 };
