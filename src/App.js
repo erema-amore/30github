@@ -1,15 +1,14 @@
 
 import './App.css';
+import CurrentDate from './components/CurrentDate';
 
-import Counter from './components/Counter';
-import DynamicFontSize from './components/DynamicFontSize';
-import FilterList from './components/FilterList';
+
 
 function App() {
   return (
     <div className="App">
-      <DynamicFontSize/>
-     
+      
+     <CurrentDate/>
     </div>
   );
 }
