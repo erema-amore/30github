@@ -1,14 +1,15 @@
 
 import './App.css';
-import CurrentDate from './components/CurrentDate';
+import SortList from './components/SortList';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      
-     <CurrentDate/>
+      <SortList/>
+     
     </div>
   );
 }
