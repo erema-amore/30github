@@ -1,6 +1,7 @@
 
 import './App.css';
-import SortList from './components/SortList';
+import SortComponent from './components/SortComponent';
+
 
 
 
@@ -8,7 +9,8 @@ import SortList from './components/SortList';
 function App() {
   return (
     <div className="App">
-      <SortList/>
+      <SortComponent/>
+     
      
     </div>
   );
