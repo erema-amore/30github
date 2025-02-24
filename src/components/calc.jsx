@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './calc.css'
 
 const Calc = () => {
   const [task, setTask] = useState('');
@@ -27,6 +28,7 @@ const Calc = () => {
         placeholder="Введите выражение (например, 5+5)"
       />
       <button onClick={calculateResult}>=</button>
+      <div className="my-class">Hello</div>
     </div>
   );
 };
