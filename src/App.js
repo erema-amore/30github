@@ -1,6 +1,8 @@
 
 import './App.css';
-import SortComponent from './components/SortComponent';
+import Calc from './components/calc';
+import UserProfile from './components/UserProfile';
+
 
 
 
@@ -9,7 +11,8 @@ import SortComponent from './components/SortComponent';
 function App() {
   return (
     <div className="App">
-      <SortComponent/>
+      <UserProfile/>
+    
      
      
     </div>
