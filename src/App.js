@@ -1,7 +1,7 @@
 
 import './App.css';
-import Calc from './components/calc';
-import UserProfile from './components/UserProfile';
+import TodoList from './components/TodoList';
+
 
 
 
@@ -11,10 +11,7 @@ import UserProfile from './components/UserProfile';
 function App() {
   return (
     <div className="App">
-      <UserProfile/>
-    
-     
-     
+      <TodoList/>
     </div>
   );
 }
