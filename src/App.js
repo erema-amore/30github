@@ -1,6 +1,7 @@
 
 import './App.css';
-import UserList from './components/UserList';
+import SearchList from './components/SearchList';
+
 
 
 
@@ -12,7 +13,7 @@ import UserList from './components/UserList';
 function App() {
   return (
     <div className="App">
-      <UserList/>
+      <SearchList/>
     </div>
   );
 }
