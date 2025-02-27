@@ -1,6 +1,7 @@
 
 import './App.css';
-import SearchList from './components/SearchList';
+import TaskList from './TaskList';
+
 
 
 
@@ -13,7 +14,7 @@ import SearchList from './components/SearchList';
 function App() {
   return (
     <div className="App">
-      <SearchList/>
+      <TaskList/>
     </div>
   );
 }
