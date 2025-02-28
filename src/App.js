@@ -1,6 +1,7 @@
 
 import './App.css';
-import TaskList from './TaskList';
+import ManageObjects from './components/ManageObjects';
+
 
 
 
@@ -14,7 +15,7 @@ import TaskList from './TaskList';
 function App() {
   return (
     <div className="App">
-      <TaskList/>
+     <ManageObjects/>
     </div>
   );
 }
