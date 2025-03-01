@@ -1,22 +1,30 @@
-
 import './App.css';
-import ManageObjects from './components/ManageObjects';
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import UserDetail from './components/UserDetail';
 
-
-
-
-
-
-
-
-
-
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" },
+];
 
 function App() {
   return (
-    <div className="App">
-     <ManageObjects/>
-    </div>
+    <Router>
+      <div className="App">
+        <ul>
+          {users.map((user) => (
+            <li key={user.id}>
+              <Link to={`/user/${user.id}`}>{user.name}</Link>
+            </li>
+          ))}
+        </ul>
+        
+        <Routes>
+          <Route path="/user/:id" element={<UserDetail />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
