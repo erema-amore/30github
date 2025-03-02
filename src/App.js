@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import UserDetail from './components/UserDetail';
+import Profile from './components/Profile';
 
 const users = [
   { id: 1, name: "Alice" },
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/user/:id" element={<UserDetail />} />
         </Routes>
+        <Profile/>
       </div>
     </Router>
   );
