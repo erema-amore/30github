@@ -1,5 +1,6 @@
 import './App.css';
-import UserMain from './components/UserMain';
+import AuthStatus from './components/AuthStatus';
+
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     
       <div className="App">
        
-        <UserMain/>
+        <AuthStatus/>
       </div>
     
   );
