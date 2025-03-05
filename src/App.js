@@ -1,5 +1,6 @@
 import './App.css';
-import AuthStatus from './components/AuthStatus';
+import AddToList from './components/AddToList';
+
 
 
 
@@ -8,7 +9,7 @@ function App() {
     
       <div className="App">
        
-        <AuthStatus/>
+        <AddToList/>
       </div>
     
   );
