@@ -1,5 +1,6 @@
 import './App.css';
-import AddToList from './components/AddToList';
+import ToggleColor from './components/ToggleColor';
+
 
 
 
@@ -9,7 +10,7 @@ function App() {
     
       <div className="App">
        
-        <AddToList/>
+        <ToggleColor/>
       </div>
     
   );
