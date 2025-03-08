@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import Pagination from "./components/Pagination";
 
 const ThemeContext = createContext();
 
@@ -25,6 +26,7 @@ function App() {
   return (
     <ThemeProvider>
       <ThemeToggler />
+      <Pagination/>
     </ThemeProvider>
   );
 }
